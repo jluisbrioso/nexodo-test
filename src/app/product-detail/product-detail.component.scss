@@ -1,0 +1,101 @@
+@import "../../styles.scss";
+
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    outline: 4px solid black;
+    min-height: 38vw;
+    width: 80vw;
+
+    &--azul{
+        background-color: $azul;
+    }
+
+    &--gris{
+        background-color: $gris;
+    }
+
+    &--naranja{
+        background-color: $naranja;
+    }
+
+    &--morado{
+        background-color: $morado;
+    }
+
+    &--rojo{
+        background-color: $rojo;
+    }
+
+    &--negro{
+        background-color: $negro;
+    }
+
+    &--verde{
+        background-color: $verde;
+    }
+
+    &__prodInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20rem;
+        width: 20rem;
+        background-color: whitesmoke;
+        outline: 2px solid black;
+        margin: 1vw;
+
+        &__name{
+            font-family: "Encode Sans Expanded", sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        &__img{
+            width: 12rem;
+            margin: 1vw;
+        }
+
+        &__cost{
+            font-family: "Encode Sans", sans-serif;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    }
+
+    &__options{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 38vw;
+
+        &__option{
+            display: flex;
+            align-items: center;
+            width: 20rem;
+            height: 4rem;
+            background-color: whitesmoke;
+            outline: 1px solid black;
+            margin: 1vw;
+
+            &__index{
+                width: 5rem;
+                font-family: "Encode Sans Expanded", sans-serif;
+                font-size: 1.8rem;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            &__price{
+                font-family: "Encode Sans", sans-serif;
+                font-size: 1.2rem;
+                text-align: center;
+            }
+        }
+    }
+}
+

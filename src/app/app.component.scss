@@ -1,0 +1,29 @@
+@import "../styles.scss";
+
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+
+    &__panel{
+        height: 5vw;
+    }
+
+    &__logo{
+        height: 5vw;
+    }
+}
+
+.footer{
+    font-family: "Encode Sans", sans-serif;
+    margin-top: 1.5vw;
+}
+
+

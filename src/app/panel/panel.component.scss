@@ -1,0 +1,71 @@
+@import "../../styles.scss";
+
+.panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80vw;
+
+  &__product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid black;
+    height: 16rem;
+    width: 16em;
+    margin: 1vw;
+
+    &.notActive {
+      filter: opacity(65%);
+      pointer-events: none;
+    }
+
+    &:hover {
+      filter: opacity(100%);
+      outline: 4px solid grey;
+      cursor: pointer;
+    }
+
+    &__img {
+      width: 10rem;
+      margin: 1vw 1vw;
+    }
+
+    &__name {
+      font-family: "Encode Sans Expanded", sans-serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1vw;
+    }
+
+    &--azul {
+      background-color: $azul;
+    }
+
+    &--gris {
+      background-color: $gris;
+    }
+
+    &--naranja {
+      background-color: $naranja;
+    }
+
+    &--morado {
+      background-color: $morado;
+    }
+
+    &--rojo {
+      background-color: $rojo;
+    }
+
+    &--negro {
+      background-color: $negro;
+    }
+
+    &--verde {
+      background-color: $verde;
+    }
+  }
+}

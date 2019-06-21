@@ -1,0 +1,15 @@
+<ng-container *ngIf="product.active">
+    <div class="details" [ngClass]="'details--' + product.color">
+      <div class="details__prodInfo">
+        <div class="details__prodInfo__name">{{product.name}}</div>
+        <img class="details__prodInfo__img" src='assets/scalableVectorGraphics/icons/{{product.name}}.svg'>
+        <div class="details__prodInfo__cost">Coste: {{product.costprice}}</div>
+      </div>
+      <div class="details__options">
+        <div class="details__options__option" *ngFor="let option of options; index as i">
+          <div class="details__options__option__index">{{i+1}}</div>
+          <div class="details__options__option__price">{{option}} €</div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
